@@ -20,7 +20,30 @@ svgtofont({
     fontHeight: 1000,
     normalize: true
   },
-  website: null
+  //website: null
+  website: {
+    title: "PEC Font Icons",
+    // Must be a .svg format image.
+    logo: path.resolve(process.cwd(), "svg", "git.svg"),
+    version: pkg.version,
+    meta: {
+      description: "Converts SVG fonts to TTF/EOT/WOFF/WOFF2/SVG format.",
+      keywords: "svgtofont,TTF,EOT,WOFF,WOFF2,SVG"
+    },
+    description: ``,
+    corners: {
+      url: 'https://github.com/PEC-Developement-Team/PEC-Icons',
+      width: 60, // default: 60
+      height: 60, // default: 60
+      bgColor: '#dc3545' // default: '#151513'
+    },
+    links: [
+      {
+        title: "Font Class",
+        url: "index.html"
+      }
+    ]
+  }
 }).then(() => 
 {
   console.log('Done!');
